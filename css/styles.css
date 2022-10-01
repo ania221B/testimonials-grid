@@ -49,6 +49,9 @@ body {
     color: hsl(var(--clr-secondary-900));
 
     background-color: hsl(var(--clr-secondary-100));
+
+    display: grid;
+    place-items: center;
 }
 
 /* resets margin rules */
@@ -122,6 +125,26 @@ textarea {
 /* ===============
 UTILITY CLASSES
 ================= */
+
+.container {
+    width: 90%;
+    max-width: 80rem;
+    margin-inline: auto;
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.flow > *:where(:not(:first-child)) {
+    margin-top: var(--flow-space, 1rem);
+} 
 
 .bg-primary-400 { background-color: hsl(var(--clr-primary-400)); }
 .bg-secondary-400 { background-color: hsl(var(--clr-secondary-400)); }
