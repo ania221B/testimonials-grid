@@ -185,13 +185,19 @@ COMPONENTS
     align-items: center;
 }
 
-.card > *:first-child p:last-of-type {
+.card > *:first-child h2 {
+    font-size: var(--fs-500);
+    font-weight: var(--fs-500);
+}
+
+.card > *:first-child p:only-of-type {
     color: hsl(var(--fg) / .5);
 }
 
 .card > *:nth-child(2) > p:first-child  {
     font-size: var(--fs-600);
     font-weight: var(--fw-600);
+    line-height: 1.2;
 }
 
 .card > *:nth-child(2) > p:last-child {
