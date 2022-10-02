@@ -170,7 +170,8 @@ COMPONENTS
     padding-inline: 2rem;
     border-radius: 0.5rem;
     background-color: var(--bg);
-    color: hsl(var(--fg))
+    color: hsl(var(--fg));
+    box-shadow: 0 1.5rem 2rem -.75rem hsl(var(--clr-secondary-900) / .2); 
 }
 
 .card img {
