@@ -181,20 +181,20 @@ COMPONENTS
     border-radius: 50%;
 }
 
-.card .flex {
+.card > *:first-child {
     align-items: center;
 }
 
-.card figcaption > P:last-of-type {
+.card > *:first-child p:last-of-type {
     color: hsl(var(--fg) / .5);
 }
 
-.card blockquote h2 {
+.card > *:nth-child(2) > p:first-child  {
     font-size: var(--fs-600);
     font-weight: var(--fw-600);
 }
 
-.card blockquote p {
+.card > *:nth-child(2) > p:last-child {
     color: hsl(var(--fg) / .7);
 }
 
