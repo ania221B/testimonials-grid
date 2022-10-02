@@ -142,19 +142,19 @@ UTILITY CLASSES
 ================= */
 
 .container {
-    width: 90%;
+    width: 88%;
     max-width: 70rem;
     margin-inline: auto;
 }
 
 .grid {
     display: grid;
-    gap: var(--gap, 1rem);
+    gap: var(--grid-gap, 1rem);
 }
 
 .flex {
     display: flex;
-    gap: var(--gap, 1rem);
+    gap: var(--flex-gap, 1rem);
 }
 
 .flow > *:where(:not(:first-child)) {
@@ -203,7 +203,7 @@ LAYOUT
 ================= */
 
 .grid--testimonials {
-    --gap: 1.5rem;
+    --grid-gap: 1.5rem;
     padding-block: 4rem;
     grid-template-columns: 1fr;
     grid-template-areas: 
