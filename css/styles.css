@@ -195,7 +195,7 @@ COMPONENTS
     color: hsl(var(--fg) / .5);
 }
 
-.card > *:nth-child(2) > p:first-child  {
+.card > header + p  {
     font-size: var(--fs-600);
     font-weight: var(--fw-600);
     line-height: 1.2;
